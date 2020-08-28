@@ -19,9 +19,9 @@ class UserController extends Controller
     /*
         This function will using for a moving page for edit profile
     */
-    public function edit($id)
+    public function edit()
     {
-        //
+        return redirect('');
     }
 
     /*

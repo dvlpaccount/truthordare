@@ -1,16 +1,26 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// This is a homepage
+    Route::view('/', 'Home');
+
+// To The Edit Profile
+    Route::view('edit', 'commons.profile-edit');
+    
+// To Profile
+    Route::view('u', 'commons.profile');
+
+// To List Page
+    // If = login
+        Route::view('l', 'commons.list-page');
+    // else if = another user or not login
+        // Route::view('l', 'commons.listf-guest');
+
+// Item View : 
+    // Truth's View
+        Route::view('vt', 'truths.view-truth');
+    // Dare's View
+        Route::view('vd', 'dares.view-dare');
+
+?>

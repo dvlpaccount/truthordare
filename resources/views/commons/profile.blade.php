@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="links">
-                    show your profile
+                    show your profile | <a href="">Edit Profile</a>
                 </div>
             </div>
         </div>
